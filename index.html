@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Basics - Short Course</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: #142c50;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(120deg, #1769aa, #142c50);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffbd39;
+    color: #142c50;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* General sections */
+section {
+    padding: 50px 8%;
+}
+
+h2 {
+    text-align: center;
+    color: #142c50;
+    margin-bottom: 25px;
+}
+
+/* Objectives */
+.objectives {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.objectives ul {
+    padding-left: 25px;
+}
+
+/* Course modules */
+.module-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.module {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+    text-align: center;
+}
+
+.module h3 {
+    color: #1769aa;
+    margin-bottom: 10px;
+}
+
+/* Course information */
+.info {
+    background: #e4edf8;
+    text-align: center;
+}
+
+.info p {
+    margin: 10px;
+}
+
+/* Registration */
+.registration {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.registration input,
+.registration select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration button {
+    width: 100%;
+    padding: 13px;
+    background: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration button:hover {
+    background: #142c50;
+}
+
+/* Footer */
+footer {
+    background: #142c50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2>WebLearn</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#modules">Modules</a>
+        <a href="#registration">Register</a>
+    </div>
+</nav>
+
+<!-- Home -->
+<div class="hero" id="home">
+    <h1>Web Development Basics</h1>
+    <p>Learn HTML, CSS and JavaScript from Scratch!</p>
+    <p>A short course designed for beginners.</p>
+    <a href="#registration" class="btn">Register Now</a>
+</div>
+
+<!-- Objectives -->
+<section id="objectives">
+    <h2>Course Objectives</h2>
+    <div class="objectives">
+        <p>After completing this course, students will be able to:</p>
+        <ul>
+            <li>Understand the fundamentals of web development.</li>
+            <li>Create web pages using HTML.</li>
+            <li>Design attractive websites using CSS.</li>
+            <li>Add interactive features using JavaScript.</li>
+            <li>Develop a simple responsive website.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Modules -->
+<section id="modules">
+    <h2>Course Modules</h2>
+    <div class="module-container">
+
+        <div class="module">
+            <h3>Module 1: HTML</h3>
+            <p>Learn HTML tags, headings, paragraphs,
+            images, links, tables and forms.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 2: CSS</h3>
+            <p>Learn colors, fonts, backgrounds,
+            layouts, styling and responsive design.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 3: JavaScript</h3>
+            <p>Learn variables, functions, events,
+            conditions and basic interactivity.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 4: Mini Project</h3>
+            <p>Build a simple responsive website
+            using HTML, CSS and JavaScript.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Course Information -->
+<section class="info">
+    <h2>Course Information</h2>
+    <p><strong>Course Name:</strong> Web Development Basics</p>
+    <p><strong>Duration:</strong> 4 Weeks</p>
+    <p><strong>Mode:</strong> Online / Offline</p>
+    <p><strong>Eligibility:</strong> Beginners and Students</p>
+    <p><strong>Course Fee:</strong> ₹1,500</p>
+    <p><strong>Certificate:</strong> Provided after completion</p>
+</section>
+
+<!-- Registration -->
+<section id="registration">
+    <h2>Student Registration</h2>
+
+    <div class="registration">
+        <form id="registerForm">
+
+            <input type="text" id="name"
+            placeholder="Enter Your Full Name" required>
+
+            <input type="email" id="email"
+            placeholder="Enter Your Email" required>
+
+            <input type="tel" id="phone"
+            placeholder="Enter Your Phone Number"
+            pattern="[0-9]{10}" required>
+
+            <select id="education" required>
+                <option value="">Select Qualification</option>
+                <option>School Student</option>
+                <option>College Student</option>
+                <option>Graduate</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+
+        </form>
+
+        <p id="message" style="text-align:center;
+        margin-top:15px; color:green;"></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 WebLearn | Web Development Basics</p>
+    <p>Contact: weblearn@example.com</p>
+</footer>
+
+<script>
+document.getElementById("registerForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+
+    document.getElementById("message").innerHTML =
+        "Thank you, " + name +
+        "! Your registration form has been submitted.";
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>
